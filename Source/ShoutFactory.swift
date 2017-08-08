@@ -1,5 +1,4 @@
 import UIKit
-import SDWebImage
 
 let shoutView = ShoutView()
 
@@ -133,7 +132,7 @@ open class ShoutView: UIView {
     }
     
     if let imageURL = announcement.imageURL {
-        imageView.sd_setImage(with: imageURL)
+        imageView.loadImageUsingCache(withUrl: imageURL.absoluteString)
     }
     
     titleLabel.text = announcement.title
