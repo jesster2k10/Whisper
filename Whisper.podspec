@@ -12,5 +12,5 @@ Pod::Spec.new do |s|
   s.source_files = 'Source/**/*'
   s.frameworks = 'UIKit', 'Foundation'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
-  s.dependency = 'SDWebImage'
+  s.dependency 'SDWebImage', '~> 4.0'
 end
